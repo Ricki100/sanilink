@@ -16,6 +16,7 @@ canvas {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+  z-index: -1;
 } /* ---- stats.js ---- */
 .count-particles {
   background: #000022;
@@ -50,13 +51,27 @@ canvas {
   border-radius: 0 0 3px 3px;
 }
 
+.container {
+  position: relative;
+  border: 2px solid red;
+}
+
+.logo-container {
+}
+
+.toilet-container {
+  border: 0px solid red;
+  margin-top: 100px;
+}
+
+.logo-container,
+.toilet-container {
+  margin-left: 100px;
+}
+
 .logo {
-  width: 800px;
-  position: absolute;
-  z-index: 10;
-  text-align: center;
-  margin: 0 auto;
-  display: block;
+  width: 600px;
+  text-align: right;
 }
 
 .carousel {
@@ -64,16 +79,54 @@ canvas {
 }
 
 .toilet {
-  width: 300px;
-  position: absolute;
+  width: 100px;
+
   bottom: 0;
   left: 100px;
 }
 
 .one {
-  width: 600px;
+  width: 550px;
 }
 
-.two {
-  width: 900px;
+.about {
+  position: absolute;
+  width: 500px;
+  text-align: justify;
+  -moz-text-align-last: center;
+  text-align-last: center;
+  line-height: 30px;
+  top: 10px;
+  right: 15%;
+  color: #0080c8;
+}
+
+.about p {
+  font-size: 20px;
+}
+
+.form {
+  text-align: center;
+  border: 0px red solid;
+}
+
+form {
+  margin: 0 auto;
+}
+
+.input {
+  width: 500px;
+  text-align: center;
+  border-radius: 30px;
+  padding: 20px 0 20px 0;
+  opacity: 0.5;
+}
+
+.contact-text {
+  color: white;
+}
+
+button {
+  padding: 10px;
+  margin: 10px;
 }
